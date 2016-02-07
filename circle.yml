@@ -1,0 +1,11 @@
+machine:
+  timezone:
+    Asia/Tokyo
+
+dependencies:
+  override:
+    - go get github.com/youyo/emptyport
+
+test:
+  override:
+    - go test

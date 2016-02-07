@@ -1,5 +1,7 @@
 # emptyport
 
+[![Circle CI](https://circleci.com/gh/youyo/emptyport.svg?style=svg)](https://circleci.com/gh/youyo/emptyport)
+
 This Library find the tcp port that is not used.
 
 ## Usage

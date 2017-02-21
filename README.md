@@ -1,8 +1,14 @@
 # emptyport
 
-[![Circle CI](https://circleci.com/gh/youyo/emptyport.svg?style=svg)](https://circleci.com/gh/youyo/emptyport)
+[![wercker status](https://app.wercker.com/status/36d0825cc499a52cf476c8379342c8ea/s/master "wercker status")](https://app.wercker.com/project/byKey/36d0825cc499a52cf476c8379342c8ea)
 
 This Library find the tcp port that is not used.
+
+## Installation
+
+```
+$ go get gopkg.in/youyo/emptyport.v1
+```
 
 ## Usage
 
@@ -10,11 +16,11 @@ Just call `emptyport.Get()`.
 
 ```
 import (
-	"github.com/youyo/emptyport"
+	"gopkg.in/youyo/emptyport.v1"
 	"fmt"
 )
 
-p := emptyport.Get()
+p, _ := emptyport.Get()
 fmt.Println(p)
 ```
 

@@ -1,13 +1,14 @@
 package emptyport_test
 
 import (
-	"github.com/youyo/emptyport"
 	"testing"
+
+	"github.com/youyo/emptyport"
 )
 
 func TestGet(t *testing.T) {
-	port := emptyport.Get()
-	if port > 1024 && port < 65535 {
+	port, err := emptyport.Get()
+	if port > 1024 && port < 65535 && err == nil {
 		t.Log("ok")
 	} else {
 		t.Error("failed")

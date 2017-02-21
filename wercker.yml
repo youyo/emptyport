@@ -1,0 +1,14 @@
+test:
+  box:
+    id: youyo/gobuild:1.8
+    cmd: /bin/bash
+  steps:
+    - wercker/setup-go-workspace:
+      package-dir: github.com/youyo/emptyport
+    - script:
+      name: Tests
+      code: |-
+        make test
+  after-steps:
+    - slack-notifier:
+      url: 'https://hooks.slack.com/services/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'
